@@ -1750,6 +1750,56 @@ background-color: rgba(241, 247, 254, 1);
 }
   /** packages section **/
   
+  /* services page */
+.page-title-div{
+	padding: 100px 0;
+	display: flex;
+	justify-content: center;
+}
+.page-title{
+	color: #fff;
+	text-align: center;
+	font-size: 62px;
+	font-family: "Montserrat-Arabic-SemiBold";
+	margin: 0;
+}
+.serv-title{
+	max-width: 100%;
+    text-align: center;
+    margin: 0 0 50px;
+}
+.service-content{
+	display: flex;
+	gap: 28px;
+}
+.service-title3{
+	font-size: 52px;
+	text-align: start;
+	font-family: "Montserrat-Arabic-Bold";
+	margin: 0 0 27px;
+	color: var(--main-color);
+}
+.serv-p{
+	text-align: start;
+	font-size: 18px;
+	color: rgba(85, 106, 128, 1);
+	width: 100%;
+	line-height: 29px;
+}
+.service-textt{
+	max-width: 513px;
+	display: flex;
+	flex-direction: column;
+	gap:27px;
+}
+.service-img{
+	border-radius: 20px;
+}
+.serv-img{
+	border-radius: 20px;
+	width: 100%;;
+}
+  /* services page */
 
 /*** testimonials section **/
 .testimonials-section{
@@ -2057,6 +2107,23 @@ border: 1px solid rgba(0, 0, 0, 0.07);
 	}
 	.card-line-section{
 		display: none;
+	}
+	.service-content{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.service-title3{
+		text-align: center;
+		font-size: 30px;
+	}
+	.service-textt{
+		max-width: 100%;
+	}
+	.page-title-div{
+		padding: 50px 0;
+	}
+	.page-title{
+		font-size: 30px;
 	}
 	.footer-logo-bar:after {
 		content: " ";
