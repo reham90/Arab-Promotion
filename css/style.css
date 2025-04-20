@@ -1778,6 +1778,8 @@ background-color: rgba(241, 247, 254, 1);
 	font-family: "Montserrat-Arabic-Bold";
 	margin: 0 0 27px;
 	color: var(--main-color);
+	max-width: 552px;
+	line-height: 73px;
 }
 .serv-p{
 	text-align: start;
@@ -1785,6 +1787,7 @@ background-color: rgba(241, 247, 254, 1);
 	color: rgba(85, 106, 128, 1);
 	width: 100%;
 	line-height: 29px;
+	margin: 0;
 }
 .service-textt{
 	max-width: 513px;
@@ -1800,7 +1803,68 @@ background-color: rgba(241, 247, 254, 1);
 	width: 100%;;
 }
   /* services page */
+/** story page **/
+.aims-section{
+	
+	padding: 100px 0;
+}
+.aims-grid{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 30px;
+}
+.aim-block{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px 24px;
+	border: 1px solid rgba(225, 225, 242, 1);
+	border-radius: 8px;
+	box-shadow: 0px 0px 35px 0px rgba(2, 14, 28, 0.07);
+	background: linear-gradient(90deg, rgba(105, 176, 225, 0.04) -6.26%, rgba(71, 126, 173, 0.04) 29.35%, rgba(46, 90, 135, 0.04) 60.37%, rgba(31, 68, 112, 0.04) 85.64%, rgba(25, 60, 103, 0.04) 100.57%, rgba(25, 60, 103, 0.04) 108.61%);
 
+}
+.aim-icon{
+	color: var(--main-color);
+	font-size: 56px;
+	margin: 0 0 20px;
+}
+.aim-title{
+	color: var(--main-color);
+	font-size: 42px;
+	font-family: "Montserrat-Arabic-Bold";
+	text-align: center;
+	margin: 0 0 38px;
+}
+.aim-p{
+	text-align: center;
+	font-size: 18px;
+	line-height: 29px;
+	margin: 0;
+	color: rgba(85, 106, 128, 1);
+}
+.title-block{
+	background: linear-gradient(90deg, #69B0E1 -6.26%, #477EAD 29.35%, #2E5A87 60.37%, #1F4470 85.64%, #193C67 100.57%, #193C67 108.61%);
+position: relative;
+justify-content: center;
+z-index: 9;
+overflow: hidden;
+}
+.title-block::before{
+	content: url(../images/shape-2.png);
+	position: absolute;
+	top:0;
+	inset-inline-end: 0;
+}
+.title-block .aim-title{
+	color: #fff;
+	max-width: 145px;
+	line-height: 56px;
+}
+.working-inner-page{
+	padding: 100px 0;
+}
+/** story page **/
 /*** testimonials section **/
 .testimonials-section{
 	padding: 122px 0 78px;
@@ -2108,6 +2172,19 @@ border: 1px solid rgba(0, 0, 0, 0.07);
 	.card-line-section{
 		display: none;
 	}
+	.aims-grid{
+		grid-template-columns: repeat(1,1fr);
+		gap:15px;
+	}
+	.working-inner-page{
+		padding: 50px 0 !important;
+	}
+	.aims-section{
+		padding: 50px 0;
+	}
+	.service-title3{
+		line-height: 1.67;
+	}
 	.service-content{
 		flex-wrap: wrap;
 		justify-content: center;
@@ -2115,6 +2192,7 @@ border: 1px solid rgba(0, 0, 0, 0.07);
 	.service-title3{
 		text-align: center;
 		font-size: 30px;
+		max-width: 100%;
 	}
 	.service-textt{
 		max-width: 100%;
