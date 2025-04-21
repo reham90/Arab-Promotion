@@ -1862,7 +1862,7 @@ overflow: hidden;
 	line-height: 56px;
 }
 .working-inner-page{
-	padding: 100px 0;
+	padding: 100px 0 !important;
 }
 /** story page **/
 /*** testimonials section **/
@@ -1944,7 +1944,9 @@ border: 1px solid rgba(0, 0, 0, 0.07);
 	transition: all 0.3s ease-in-out;
 	outline: none !important;
 }
-
+.inner-projects-title-bar{
+	justify-content: center;
+}
 
  .swiper-pagination .swiper-pagination-bullet:hover {
 	background: var(--main-hover);
