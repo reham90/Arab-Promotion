@@ -1610,7 +1610,7 @@ border-radius: 8px;
   }
   .packages-tabs > li.active > a, .packages-tabs > li.active > a:hover, .packages-tabs > li.active > a:focus {
 	padding: 11px 53px;
-	color: #fff;
+	color: #fff !important;
 	border: 0;
 	font-size: 20px;
 	font-family: "Montserrat-Arabic-Bold";
@@ -1633,7 +1633,7 @@ margin: 0;
 .packages-tabs > li > a:hover{
 	background: linear-gradient(90deg, #F5D60B -5.56%, #F5D60B -2.09%, #F4BE11 17.57%, #F2981A 52.27%, #F08120 80.03%, #F07822 97.38%, #F07822 110.1%);
 
-color: #fff;
+color: #fff !important;
 }
 .packages-grid{
 	display: grid;
@@ -1747,6 +1747,127 @@ background-color: rgba(241, 247, 254, 1);
 }
 .popular-block .package-list li{
 	color: rgba(85, 106, 128, 1);
+}
+.package-inner .package-block{
+	background: rgba(14, 39, 67, 0.07);
+
+}
+.package-inner .package-category{
+	background: var(--main-hover);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.package-inner .package-price{
+	color: var(--main-color);
+}
+.package-inner .package-list li{
+	color: var(--main-color);
+}
+.package-inner .popular-block{
+	background-color: var(--main-color);
+}
+.package-inner .popular-block .package-category{
+	color: #fff;
+	-webkit-text-fill-color:#fff
+}
+.package-inner .popular-block .package-price{
+	background: var(--main-hover);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.package-inner .popular-block .package-list li{
+	color: rgba(179, 196, 214, 1);
+}
+.tabi-tamara-section{
+	padding: 0px 0 67px;
+}
+.tabi-tamara-content{
+	display: grid;
+	gap: 16px;
+	grid-template-columns: repeat(2,1fr);
+}
+.packages-comparison-section{
+	padding: 0 0 100px;
+}
+.comparison-title{
+	color: var(--main-color);
+	text-align: start;
+	margin: 0 0 45px;
+	font-size: 42px;
+	font-family: "Montserrat-Arabic-Bold";
+}
+.packages-table{
+	width: 100%;
+}
+.table-head {
+    width: 100%;
+    height: 190px;
+    background: rgba(14, 39, 67, 0.07) !important;
+}
+.table-head th {
+    padding:  30px;
+   
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+.package{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	justify-content: center;
+   align-items: center;
+}
+.package-type{
+	background: var(--main-hover);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+	font-size: 18px;
+	display: block;
+	font-family: "Montserrat-Arabic-Medium";
+}
+.pricee{
+	color: var(--main-color);
+	font-size: 32px;
+	font-family: "Montserrat-Arabic-Bold";
+}
+.packages-table tr:nth-of-type(even){
+background-color: rgba(14, 39, 67, 0.3);
+
+}
+.table-record td{
+	padding: 30px;
+	color: var(--main-color);
+	font-size: 18px;
+	text-align: center;
+	font-family: "Montserrat-Arabic-Medium";
+}
+.table-record .package-list-icon{
+	margin: 0 auto;
+}
+.packages-table tr{
+	width: 100%;
+height: 70px;
+}
+.join-link{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--main-hover);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+	font-size: 16px;
+	font-family: "Montserrat-Arabic-Bold";
+	width: 140px;
+	height: 30px;
+	border-radius: 15px;
+	border: 1.5px solid #F08120;
+	transition: 0.5s;
+}
+.join-link:hover{
+	text-decoration: none;
+	background-color: #F08120;
+	border: 1.5px solid #F08120;
+	color: var(--main-color);
 }
   /** packages section **/
   
@@ -1865,6 +1986,21 @@ overflow: hidden;
 	padding: 100px 0 !important;
 }
 /** story page **/
+/*** package page ***/
+.package-inner{
+	background-color: #fff;
+}
+.package-inner .service-title{
+	color: var(--main-color);
+}
+.package-inner .packages-tabs{
+	background-color: var(--main-color);
+}
+
+.package-inner .packages-tabs > li > a {
+	color: #B3C4D6;
+}
+/*** package page **/
 /*** testimonials section **/
 .testimonials-section{
 	padding: 122px 0 78px;
@@ -2173,6 +2309,19 @@ border: 1px solid rgba(0, 0, 0, 0.07);
 	}
 	.card-line-section{
 		display: none;
+	}
+	.packages-table-div{
+		width: 100%;
+		overflow-x: scroll;
+	}
+	.tabi-tamara-content{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.comparison-title{
+		font-size: 30px;
+		text-align: center;
 	}
 	.aims-grid{
 		grid-template-columns: repeat(1,1fr);
